@@ -24,8 +24,7 @@ public class linekedListIsPalindromeOrNot {
         ListNode curr = head;
         while(curr != null){     //LINE TO BE REMEMBERED
             ListNode last = curr.next;
-            prev = curr.next;
-            
+            curr.next = prev;
             prev = curr;
             curr = last;
         }

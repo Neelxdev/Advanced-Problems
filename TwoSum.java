@@ -13,7 +13,11 @@ public class TwoSum {
         int[] nums = {2, 7, 11, 15};
         int k = 17;
         int[] result = Sum(nums, k);
-        System.out.println("["+result[0]+","+result[1]+"]");
+        if (result != null) {
+            System.out.println("[" + result[0] + "," + result[1] + "]");
+        } else {
+            System.out.println("No solution found.");
+        }
 
     }
 }
